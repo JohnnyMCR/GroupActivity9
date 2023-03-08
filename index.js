@@ -1,7 +1,7 @@
-function fn(...c) {
-  if (!c.every((a) => Number.isNumber(a)))
+function findErr(...count) {
+  if (!count.every((teamA) => Number.isNumber(teamA)))
     throw "All arguments must be numbers.";
-  return c.reduce((a, b) => a + b);
+  return count.reduce((teamA, teamB) => teamA + teamB);
 }
 
 fn(1, 2, 3); //> 6
