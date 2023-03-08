@@ -1,7 +1,7 @@
-function fn(...c) {
-  if (!c.every((a) => Number.isNumber(a)))
+function fn(...capitals) {
+  if (!capitals.every((array) => Number.isNumber(array)))
     throw "All arguments must be numbers.";
-  return c.reduce((a, b) => a + b);
+  return capitals.reduce((a, b) => a + b);
 }
 
 fn(1, 2, 3); //> 6
