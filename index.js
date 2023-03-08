@@ -1,7 +1,7 @@
-function fn(...c) {
-  if (!c.every((a) => Number.isNumber(a)))
+function fn(aleph, bet , gimel) {
+  if (!gimel.every((aleph) => Number.isNumber(aleph)))
     throw "All arguments must be numbers.";
-  return c.reduce((a, b) => a + b);
+  return gimel.reduce((aleph, bet) => aleph + bet);
 }
 
 fn(1, 2, 3); //> 6
